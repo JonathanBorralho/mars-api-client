@@ -1,0 +1,32 @@
+<div class="p-5">
+  <div class="row">
+    <div class="col">
+      <h1 class="display-3 text-center">Sol {{ sol.sol }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-body text-center">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th class="sol-table-col">Max.</th>
+                <th class="sol-table-col">Avg.</th>
+                <th class="sol-table-col">Min.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ sol.AT.mx }}º F</td>
+                <td>{{ sol.AT.av }}º F</td>
+                <td>{{ sol.AT.mn }}º F</td>
+              </tr>
+            </tbody>
+          </table>
+          <a routerLink="/" class="card-link">Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

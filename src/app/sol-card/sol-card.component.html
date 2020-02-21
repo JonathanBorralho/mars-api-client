@@ -1,0 +1,12 @@
+<div class="card p-2 mt-3">
+  <div class="card-header text-center">
+    Sol {{ sol.sol }}
+  </div>
+  <div class="card-body text-center">
+    <div class="card-text mb-3">
+      <p>Avg.</p>
+      {{ sol.AT.av }}º F
+    </div>
+    <a [routerLink]="['/sols', sol.sol]" [state]="sol" class="card-link">More</a>
+  </div>
+</div>
