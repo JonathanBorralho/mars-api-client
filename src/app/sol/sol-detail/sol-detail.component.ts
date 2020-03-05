@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Sol } from '../model/sol.model';
 
 @Component({
@@ -11,7 +10,7 @@ export class SolDetailComponent implements OnInit {
 
   sol: Sol;
 
-  constructor(private router: Router) { }
+  constructor() { }
 
   ngOnInit(): void {
     this.sol = history.state;
